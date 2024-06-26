@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DownloadData from './components/DownloadData';
+import PdfDownloader from './components/PdfDownloader';
 
 const App = () => {
     const [data, setData] = useState(null);
@@ -35,7 +36,11 @@ const App = () => {
             )}
             <br />
             <DownloadData />
+            <hr />
+            <PdfDownloader />
                     </div>
+
+
     );
 };
 
