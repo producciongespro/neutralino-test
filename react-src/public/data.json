@@ -1,0 +1,12 @@
+{
+    "modulos": [
+        {
+            "id": "1",
+            "nombre": "IE"
+        },
+        {
+            "id": "2",
+            "nombre": "Movilab"
+        }
+    ]
+}
