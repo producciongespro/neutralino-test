@@ -7,6 +7,11 @@ import Neutralino from '@neutralinojs/lib';
 
 const App = () => {
     useEffect(() => {
+        setup()
+    }, []);
+
+
+    const setup = async ()=> {
         console.log("init");
         /*
         Neutralino.init({
@@ -22,7 +27,8 @@ const App = () => {
         Neutralino.events.on('ready', () => {
             Neutralino.os.showMessageBox('Welcome', 'Hello Neutralinojs');
         });
-    }, []);
+        await Neutralino.window.maximize();
+    }
 
     return (
         <>

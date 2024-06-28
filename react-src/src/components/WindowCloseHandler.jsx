@@ -1,17 +1,12 @@
+// WindowCloseHandler.jsx
 import { useEffect } from 'react';
 import Neutralino from '@neutralinojs/lib';
 
 const WindowCloseHandler = () => {
     useEffect(() => {
-        const handleWindowClose = async () => {
-            console.log("Cerrando app");
-            await Neutralino.os.showMessageBox({
-                title: "Cerrando aplicación",
-                content: "Cerrando aplicación. Por favor espere.",
-                type: "INFO",
-                buttons: ["OK"]
-            });
-            Neutralino.app.exit();
+        const handleWindowClose = () => {
+            console.log("Cerrando aplicación");
+            // Aquí puedes agregar cualquier otra lógica que desees ejecutar al cerrar la ventana
         };
 
         // Suscribirse al evento de cierre de ventana
