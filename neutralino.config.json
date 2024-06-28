@@ -9,7 +9,10 @@
   "nativeAllowList": [
     "app.*",
     "filesystem.readDirectory",
-    "filesystem.readFile" 
+    "filesystem.readFile",
+    "window.*",
+     "os.showMessageBox"
+    
   ],
   "modes": {
     "window": {
@@ -39,11 +42,11 @@
       "read": true,
       "write": false,
       "dirs": [
-          "documents",
-          "home",
-          "downloads"
+        "documents",
+        "home",
+        "downloads"
       ]
-  },
+    },
     "binaryVersion": "5.2.0"
   }
 }
